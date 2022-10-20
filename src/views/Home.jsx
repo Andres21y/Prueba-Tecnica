@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
+ import { useDispatch } from "react-redux";
 import Nav from "../components/nav/Navbar";
 import Paginated from "../components/paginated/Paginated";
 import { Footer } from "../components/footer/Footer";
+import  getApiInfo  from "../Redux/actions";
+
 import "./home.css";
 
 import napx from "../imge/nap.jpg"
@@ -33,7 +35,7 @@ import collage from "../imge/puffCollage.jpeg"
 
 
 export default function Home() {
-  // const dispatch = useDispatch()
+   const dispatch = useDispatch()
   const [name, setName] = useState('');
   console.log(name);
   const [error, setError] = useState({});
@@ -51,7 +53,7 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     console.log(e);
-    // dispatch()
+    dispatch(getApiInfo())
     setName('')
   }
 
