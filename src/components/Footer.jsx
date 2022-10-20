@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Footer = ({logo, purchase, qr}) => {
+export const Footer = ({logo, purchase, qr,face, twiter,instagram}) => {
     return (
         <>
             <footer className="footer">
@@ -25,13 +25,17 @@ export const Footer = ({logo, purchase, qr}) => {
                         <h5>COMPRA 100&#37; SEGURA</h5>
                         </div>
                         <div className='logi'>
-                            <img src={qr} width="40px" height="50px" alt="QR" />
+                            <img src={qr} width="40px" height="50px"  alt="QR" />
                             <img src={purchase} width="40px" height="50px" alt="purchase" />
                             <span>COMPRA CON LA GARANTÍA DE PUFI</span>
                         </div>
                     </div>
                     <div className="">
-                        <span>  sigenos en</span>
+                        <span> SIGENOS EN
+                            <img src={face} width="40px" height="30px" alt="facebook" />
+                            <img src={twiter} width="40px" height="30px" alt="twiter" />
+                            <img src={instagram} width="40px"  height="30px" alt="instagram" />
+                        </span>
                     </div>
                 </div>
                 <div className='copyRight'>

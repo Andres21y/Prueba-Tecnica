@@ -11,6 +11,9 @@ import puficart from "../imge/pufiCart.jpg"
 import pufifooter from "../imge/pufifooter.png"
 import qr from "../imge/QR.png"
 import purchase from "../imge/purchase.png"
+import face from "../imge/face.png"
+import instagram from "../imge/instagram.png"
+import twiter from "../imge/twiter.png"
 
 
 
@@ -159,7 +162,14 @@ export default function Home() {
       </div>
       {/**======================== */}
       <br />
-      <Footer logo={pufifooter} qr={qr}  purchase={purchase} />
+      <Footer
+        purchase={purchase}
+        logo={pufifooter}
+        qr={qr}
+        face={face}
+        twiter={twiter}
+        instagram={instagram}
+      />
     </div>
   );
 }
