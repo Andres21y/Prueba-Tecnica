@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container_paginated{
+display: flex;
+margin-bottom: 15px;
+gap: 10px;
+}
+
+.container_paginated input{
+    width: 25px;
+    height: 15px;
+   background: transparent;
+}

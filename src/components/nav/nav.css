@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    box-shadow: inset 0px 35px 20px  1px rgba(0, 0, 0, 0.399);
+}
+
+.start {
+    background-image: url("../../imge/logo.png");
+    background-repeat: no-repeat;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding-left: 4em;
+    font-size: 38px;
+}
+
+.middel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 42px;
+    color: white;
+    font-size: medium;
+}
+
+
+.end {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    width: 200px;
+    padding-top: 15px;
+}
+
+.end button {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.cnt_pufi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cnt_rain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left:1px solid rgba(255, 255, 255, 0.436);
+    border-right:1px solid rgba(255, 255, 255, 0.436);;
+    width: 150px;
+}
+.cnt_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid rgba(255, 255, 255, 0.436);;
+padding-right: 40px;
+}

@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    cursor: pointer;
+}
+
+.main {
+    background-image: url("../imge/puffCollage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main p {
+    color: white;
+    font-size: 35px;
+}
+
+h1 {
+    margin-top: 5em;
+}
+
+
+
+button {
+    cursor: pointer;
+    height: 40px;
+    min-width: 110px;
+    color: rgba(255, 255, 255, 0.742);
+    background-color: transparent;
+    border: solid rgb(255, 255, 255) 2.5px;
+}
+
+.shop {
+    background-image: url("../imge/tokio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pufi_rain {
+    display: flex;
+}
+
+.container_rain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 2em;
+}
+
+.rain {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.pufi_puff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puff {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pic_puff {
+    background-image: url("../imge/bag.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_puff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 25px;
+}
+
+.container_espufi {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.spufi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spufi p {
+    color: rgba(102, 101, 100, 0.611);
+    font-size: x-small
+}
+
+.spufi span {
+    font-size: 28px
+}
+
+.imgcollage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    min-height: 40px;
+    gap: 1px;
+}
+
+.pufi_cart {
+    display: flex;
+}
+
+.image_cart {
+    background-image: url("../imge/shopping.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 25px;
+}
+
+.pufi_nap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pic_nap {
+    background-image: url("../imge/pufiNap2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_nap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 25px;
+}
+
+.newSletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container_input {
+    width: 400px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+form input {
+    flex: 1;
+    height: 28px;
+    border: none;
+    outline: none;
+}
+
+.container_input button {
+    height: 28px;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 19px gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.55);
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.container_footer {
+    display: flex;
+    height: 400px;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.45);
+}
+
+.pufis {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    border-left:1px solid rgba(0, 0, 0, 0.18);
+    padding-top: 10px;
+    padding-left: 30px;
+    gap: 10px;
+    width: 180px;
+}
+
+.copyRight{
+font-size: x-small;
+}
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    border-left:1px solid rgba(0, 0, 0, 0.18);
+    border-right:1px solid rgba(0, 0, 0, 0.18);
+    padding-left: 10px;
+    padding-right: 10px;
+}
