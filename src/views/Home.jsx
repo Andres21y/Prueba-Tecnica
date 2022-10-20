@@ -1,9 +1,9 @@
-import React, { useState } from "react";
- import { useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import Nav from "../components/nav/Navbar";
 import Paginated from "../components/paginated/Paginated";
 import { Footer } from "../components/footer/Footer";
-import  getApiInfo  from "../Redux/actions";
+import saveEmail from "../Redux/actions";
 
 import "./home.css";
 
@@ -35,15 +35,14 @@ import collage from "../imge/puffCollage.jpeg"
 
 
 export default function Home() {
-   const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const [name, setName] = useState('');
-  console.log(name);
+
   const [error, setError] = useState({});
 
   const handleState = (e) => {
-    const ExReg = /^w+([.-]?w+)*@w+([.-]?\w+)*(\.\w{2,3,4})+$/
 
-    if (ExReg.test(e.target.value)) {
+    if (e.target.name === 'email') {
       e.preventDefault();
       setName(e.target.value)
     } else {
@@ -52,11 +51,10 @@ export default function Home() {
   }
 
   const handleSubmit = (e) => {
-    console.log(e);
-    dispatch(getApiInfo())
+    e.preventDefault();
+    dispatch(saveEmail(name))
     setName('')
   }
-
 
 
   return (
@@ -152,7 +150,7 @@ export default function Home() {
           <p>NEWSLETTER</p>
           <span>SUSCRIBITE</span>
           <div>y enterates de todas las novedades</div>
-          <form action="https://formspree.io/f/{form_id}" method="post" onSubmit={(e) => handleSubmit(e)}  >
+          <form action="https://formspree.io/f/xvoyblvy" method="post" onSubmit={(e) => handleSubmit(e)}  >
             <div className="container_input">
               <input name="email" id="email" type="email" onChange={(e) => handleState(e)} placeholder="Ingresa tu email" />
               <label for="email"></label>
@@ -160,7 +158,7 @@ export default function Home() {
             </div>
           </form>
         </div>
-        {error && (<p className="error">invalid email, please try again</p>)}
+        {error.length && (<p className="error">invalid email, please try again</p>)}
       </div>
       {/**======================== */}
       <br />

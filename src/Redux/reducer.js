@@ -1,14 +1,14 @@
-import { GET_API_INFO } from './actions'
+import { SAVE_EMAIL } from './actions'
 
 const initialState = {
-    global: {}
+    global: []
 }
-
+console.log('ñlñlsd',initialState.global);
 export default function rootReducer(state = initialState, action) {
-    console.log('type and payload__>', action);
+    console.log('type and payload__>jjkk', action);
 
     switch (action.type) {
-        case GET_API_INFO:
+        case SAVE_EMAIL:
             return {
                 ...state,
                 global: action.payload
