@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+// import { useDispatch } from "react-redux";
 import Nav from "../components/nav/Navbar";
 import Paginated from "../components/paginated/Paginated";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/footer/Footer";
 import "./home.css";
 
 import napx from "../imge/nap.jpg"
@@ -15,6 +16,7 @@ import face from "../imge/face.png"
 import instagram from "../imge/instagram.png"
 import twiter from "../imge/twiter.png"
 import brand from "../imge/brand.png"
+import arrow from "../imge/arrow.png"
 
 
 
@@ -31,34 +33,30 @@ import collage from "../imge/puffCollage.jpeg"
 
 
 export default function Home() {
+  // const dispatch = useDispatch()
   const [name, setName] = useState('');
-  console.log('==>', name);
+  console.log(name);
+  const [error, setError] = useState({});
+
   const handleState = (e) => {
-    e.preventDefault();
-    setName(e.target.value)
+    const ExReg = /^w+([.-]?w+)*@w+([.-]?\w+)*(\.\w{2,3,4})+$/
+
+    if (ExReg.test(e.target.value)) {
+      e.preventDefault();
+      setName(e.target.value)
+    } else {
+      setError(e.target.value)
+    }
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    const letter = new RegExp('^[A-Z]+$', 'i');
-    const pattern = new RegExp(/[!@#$%^&*()_+¡\-={};':"|,.<>?]+/);
-
-
-    if (pattern.test(name)) {
-      alert('special characters are not allowed')
-
-    } else if (/^[0-9]*$/.test(name)) {
-      alert('Numbers are not allowed')
-
-    } else if (!letter.test(name)) {
-      alert('Numbers and special characters are not allowed')
-    } else {
-      !name ? alert('you must write a name', 'Please try again') :
-        // dispatch(getBreedsName(name.trim()))
-        setName('')
-    }
-
+    console.log(e);
+    // dispatch()
+    setName('')
   }
+
+
+
   return (
     <div>
       <div className="main">
@@ -152,14 +150,15 @@ export default function Home() {
           <p>NEWSLETTER</p>
           <span>SUSCRIBITE</span>
           <div>y enterates de todas las novedades</div>
-          <form action="https://formspree.io/f/{form_id}" method="post" onSubmit={handleSubmit} >
+          <form action="https://formspree.io/f/{form_id}" method="post" onSubmit={(e) => handleSubmit(e)}  >
             <div className="container_input">
-              <input name="email" id="email" type="email" onChange={(e) => handleState(e)} placeholder="Ingresa tu email" pattern=".+@email\.com" required />
+              <input name="email" id="email" type="email" onChange={(e) => handleState(e)} placeholder="Ingresa tu email" />
               <label for="email"></label>
-              <button type="submit">{"->"}</button>
+              <button type="submit"><img src={arrow} width="30px" alt="arrow" /></button>
             </div>
           </form>
         </div>
+        {error && (<p className="error">invalid email, please try again</p>)}
       </div>
       {/**======================== */}
       <br />
