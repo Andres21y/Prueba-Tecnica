@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const Footer = ({logo, purchase, qr,face, twiter,instagram}) => {
+export const Footer = ({ logo, purchase, qr, face, twiter, instagram, brand }) => {
     return (
         <>
             <footer className="footer">
                 <div className='container_footer'>
                     <div className="">
-                        <img src={logo} alt="" />
+                        <img src={logo} width="60px" alt="" />
                     </div>
                     <div className="pufis">
                         <h5>PUFI RAIN</h5>
@@ -22,10 +22,10 @@ export const Footer = ({logo, purchase, qr,face, twiter,instagram}) => {
                     </div>
                     <div className="compra">
                         <div>
-                        <h5>COMPRA 100&#37; SEGURA</h5>
+                            <h5>COMPRA 100&#37; SEGURA</h5>
                         </div>
                         <div className='logi'>
-                            <img src={qr} width="40px" height="50px"  alt="QR" />
+                            <img src={qr} width="40px" height="50px" alt="QR" />
                             <img src={purchase} width="40px" height="50px" alt="purchase" />
                             <span>COMPRA CON LA GARANTÍA DE PUFI</span>
                         </div>
@@ -34,12 +34,18 @@ export const Footer = ({logo, purchase, qr,face, twiter,instagram}) => {
                         <span> SIGENOS EN
                             <img src={face} width="40px" height="30px" alt="facebook" />
                             <img src={twiter} width="40px" height="30px" alt="twiter" />
-                            <img src={instagram} width="40px"  height="30px" alt="instagram" />
+                            <img src={instagram} width="40px" height="30px" alt="instagram" />
                         </span>
                     </div>
                 </div>
                 <div className='copyRight'>
-                    PUFI Copyright 2017 - Todo los derechos reservados
+                    <div>
+                        <p>  PUFI Copyright 2017 - Todo los derechos reservados</p>
+                    </div>
+                    <div>
+                        <img src={brand} height="20px" alt="brandline" />
+                    </div>
+
                 </div>
             </footer>
         </>

@@ -256,22 +256,22 @@ input::placeholder {
 }
 
 .footer {
-    height: 150px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 19px gray;
     border-top: 1px solid rgba(128, 128, 128, 0.55);
     margin-top: 40px;
     padding-top: 40px;
+
 }
 
 .container_footer {
     display: flex;
-    height: 400px;
+    height: 350px;
     padding-top: 15px;
     justify-content: space-evenly;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.45);
+    margin-bottom: 10px;
 }
 
 .pufis {
@@ -281,25 +281,36 @@ input::placeholder {
     gap: 10px;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
-    border-left:1px solid rgba(0, 0, 0, 0.18);
+    border-left: 1px solid rgba(0, 0, 0, 0.18);
     padding-top: 10px;
     padding-left: 30px;
     gap: 10px;
     width: 180px;
 }
 
-.copyRight{
-font-size: x-small;
+.copyRight {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    font-size: x-small;
+    color: rgba(0, 0, 0, 0.411);
+    margin-top: 19px;
+    padding-left: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.222);
 }
 
-.compra{
+
+
+.compra {
     display: flex;
     flex-direction: column;
-    border-left:1px solid rgba(0, 0, 0, 0.18);
-    border-right:1px solid rgba(0, 0, 0, 0.18);
+    border-left: 1px solid rgba(0, 0, 0, 0.18);
+    border-right: 1px solid rgba(0, 0, 0, 0.18);
     padding-left: 10px;
     padding-right: 10px;
 }

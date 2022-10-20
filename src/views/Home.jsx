@@ -14,6 +14,7 @@ import purchase from "../imge/purchase.png"
 import face from "../imge/face.png"
 import instagram from "../imge/instagram.png"
 import twiter from "../imge/twiter.png"
+import brand from "../imge/brand.png"
 
 
 
@@ -169,6 +170,7 @@ export default function Home() {
         face={face}
         twiter={twiter}
         instagram={instagram}
+        brand={brand}
       />
     </div>
   );
