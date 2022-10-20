@@ -315,7 +315,23 @@ input::placeholder {
     padding-right: 10px;
 }
 
-.error{
+.error {
     color: red;
     font-size: 24px;
+}
+
+.cubo {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    transform: rotate(130deg);
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20em;
+}
+
+.cube {
+    display: flex;
+    flex-direction: column;
 }
