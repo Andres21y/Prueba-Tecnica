@@ -1,12 +1,14 @@
 import React from 'react'
 
-export const Footer = ({ logo, purchase, qr, face, twiter, instagram, brand }) => {
+const imgPufi = require.context('../../assets/imge',true)
+
+export const Footer = () => {
     return (
         <>
             <footer className="footer">
                 <div className='container_footer'>
                     <div className="">
-                        <img src={logo} width="60px" alt="" />
+                        <img src={imgPufi(`./pufifooter.png`)} width="60px" alt="" />
                     </div>
                     <div className="pufis">
                         <h5>PUFI RAIN</h5>
@@ -25,16 +27,16 @@ export const Footer = ({ logo, purchase, qr, face, twiter, instagram, brand }) =
                             <h5>COMPRA 100&#37; SEGURA</h5>
                         </div>
                         <div className='logi'>
-                            <img src={qr} width="40px" height="50px" alt="QR" />
-                            <img src={purchase} width="40px" height="50px" alt="purchase" />
+                            <img src={imgPufi(`./QR.png`)} width="40px" height="50px" alt="QR" />
+                            <img src={imgPufi(`./purchase.png`)} width="40px" height="50px" alt="purchase" />
                             <span>COMPRA CON LA GARANTÍA DE PUFI</span>
                         </div>
                     </div>
                     <div className="">
                         <span> SIGENOS EN
-                            <img src={face} width="40px" height="30px" alt="facebook" />
-                            <img src={twiter} width="40px" height="30px" alt="twiter" />
-                            <img src={instagram} width="40px" height="30px" alt="instagram" />
+                            <img src={imgPufi(`./face.png`)} width="40px" height="30px" alt="facebook" />
+                            <img src={imgPufi(`./twiter.png`)} width="40px" height="30px" alt="twiter" />
+                            <img src={imgPufi(`./instagram.png`)} width="40px" height="30px" alt="instagram" />
                         </span>
                     </div>
                 </div>
@@ -43,7 +45,7 @@ export const Footer = ({ logo, purchase, qr, face, twiter, instagram, brand }) =
                         <p>  PUFI Copyright 2017 - Todo los derechos reservados</p>
                     </div>
                     <div>
-                        <img src={brand} height="20px" alt="brandline" />
+                        <img src={imgPufi(`./brand.png`)} height="20px" alt="brandline" />
                     </div>
 
                 </div>

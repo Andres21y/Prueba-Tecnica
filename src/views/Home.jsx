@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/Footer";
 import saveEmail from "../Redux/actions";
 import "./home.css";
 
-const imgPufi = require.context('../assets/image')
+const imgPufi = require.context('../assets/imge',true)
 
 export default function Home() {
 
@@ -38,7 +38,7 @@ export default function Home() {
     <div>
 
       <div className="main">
-        <Nav cart={cart} nap={nap} puff={puff} rain={rain} />
+        <Nav />
         <p> ESTÁR CÓMODO, <br /> NUNCA FUE TAN FÁCIL. </p>
         <button>SHOP</button>
         <Paginated />
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <div className="rain">
               <div className="container_rain">
-                <img src={umbrella} width="200px" alt="umbrella" />
+                <img src={imgPufi(`./umbrella.png`)} width="200px" alt="umbrella" />
                 <div>
                   <h3>Pufi RAIN</h3>
                 </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="pufi_puff">
             <div className="puff">
               <div className="container_puff">
-                <img src={ppufi} width="100px" alt="cojin" />
+                <img src={imgPufi(`./ppufi.jpg`)} width="100px" alt="cojin" />
                 <h3>Pufi PUFF</h3>
                 <span>____</span>
               </div>
@@ -91,7 +91,7 @@ export default function Home() {
             <div className="image_cart" />
             <div className="cart">
               <div className="container_cart">
-                <img src={puficart} width="100px" alt="umbrella" />
+                <img src={imgPufi(`./pufiCart.jpg`)} width="100px" alt="shopping" />
                 <div>
                   <h3>Pufi CART</h3>
                 </div>
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="pufi_nap">
             <div className="nap">
               <div className="container_nap">
-                <img src={napx} width="100px" alt="cojin" />
+                <img src={imgPufi(`./nap.jpg`)} width="100px" alt="nap" />
                 <h3>Pufi NAP</h3>
                 <span>____</span>
               </div>
@@ -131,12 +131,12 @@ export default function Home() {
         </div>
 
         <div className="imgcollage">
-          <img src={sleep} width="160px" height="100px" alt="sleep" />
-          <img src={puffi} width="160px" height="100px" alt="puffi" />
-          <img src={happy} width="160px" height="100px" alt="happy" />
-          <img src={collage} width="160px" height="100px" alt="collage" />
-          <img src={puficart} width="160px" height="100px" alt="puficart" />
-          <img src={pufi2} width="160px" height="100px" alt="pufi2" />
+          <img src={imgPufi(`./sleep.jpg`)} width="160px" height="100px" alt="sleep" />
+          <img src={imgPufi(`./homePage5.jpg`)} width="160px" height="100px" alt="puffi" />
+          <img src={imgPufi(`./happy.jpg`)} width="160px" height="100px" alt="happy" />
+          <img src={imgPufi(`./puffCollage.jpeg`)} width="160px" height="100px" alt="collage" />
+          <img src={imgPufi(`./pufiCart.jpg`)} width="160px" height="100px" alt="puficart" />
+          <img src={imgPufi(`./pufiPuff2.jpg`)} width="160px" height="100px" alt="pufi2" />
         </div>
 
         <div className="spufi">
@@ -147,25 +147,15 @@ export default function Home() {
             <div className="container_input">
               <input name="email" id="email" type="email" onChange={(e) => handleState(e)} placeholder="Ingresa tu email" />
               <label for="email"></label>
-              <button id="submit" disabled={false} type="submit"><img src={arrow} width="30px" alt="arrow" /></button>
+              <button id="submit" disabled={false} type="submit"><img src={imgPufi(`./arrow.png`)} width="30px" alt="arrow" /></button>
             </div>
           </form>
         </div>
 
         {error.length && (<p className="error">invalid email, please try again</p>)}
       </div><br />
-
-      {/**======================== */}
       
-      <Footer
-        purchase={purchase}
-        logo={pufifooter}
-        qr={qr}
-        face={face}
-        twiter={twiter}
-        instagram={instagram}
-        brand={brand}
-      />
+      <Footer />
     </div>
   );
 }

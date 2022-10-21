@@ -8,7 +8,7 @@ h5 {
 }
 
 .main {
-    background-image: url("../imge/puffCollage.jpeg");
+    background-image: url("../assets/imge/puffCollage.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 750px;
@@ -41,7 +41,7 @@ button {
 }
 
 .shop {
-    background-image: url("../imge/tokio.jpg");
+    background-image: url("../assets/imge/tokio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -94,7 +94,7 @@ button {
 }
 
 .pic_puff {
-    background-image: url("../imge/bag.jpg");
+    background-image: url("../assets/imge/bag.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -152,7 +152,7 @@ button {
 }
 
 .image_cart {
-    background-image: url("../imge/shopping.jpg");
+    background-image: url("../assets/imge/shopping.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -199,7 +199,7 @@ button {
 }
 
 .pic_nap {
-    background-image: url("../imge/pufiNap2.jpg");
+    background-image: url("../assets/imge/pufiNap2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
